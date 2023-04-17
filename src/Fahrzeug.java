@@ -1,4 +1,5 @@
-public abstract class Fahrzeug {
+// Fahrzeug-Klasse
+public class Fahrzeug {
     private String marke;
     private String modell;
     private String farbe;

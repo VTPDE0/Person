@@ -1,17 +1,8 @@
+// Person-Klasse
 public class Person {
     private String vorname;
     private String nachname;
     private int alter;
-
-    public Person(String vorname, String nachname, int alter) {
-        this.vorname = vorname;
-        this.nachname = nachname;
-        this.alter = alter;
-    }
-
-    public Person() {
-
-    }
 
     public String getVorname() {
         return vorname;
