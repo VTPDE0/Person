@@ -2,7 +2,10 @@
 public class Reservierung {
     private Person person;
     private Fahrzeug fahrzeug;
-
+    public Reservierung (Person person, Fahrzeug fahrzeug){
+        setPerson(person);
+        setFahrzeug(fahrzeug);
+    }
     public Person getPerson() {
         return person;
     }

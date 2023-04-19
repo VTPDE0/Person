@@ -76,9 +76,9 @@ public class Main {
         auto.setAutomatikGetriebe(true);
 
         // Eine Reservierung erstellen und Person und Fahrzeug setzen
-        Reservierung reservierung = new Reservierung();
-        reservierung.setPerson(person);
-        reservierung.setFahrzeug(auto);
+        Reservierung reservierung = new Reservierung(person, auto);
+        //reservierung.setPerson(person);
+        //reservierung.setFahrzeug(auto);
 
         // Getter-Methoden aufrufen, um Person und Fahrzeug der Reservierung zu erhalten
         Person reserviertePerson = reservierung.getPerson();
