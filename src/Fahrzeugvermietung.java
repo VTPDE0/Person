@@ -21,12 +21,15 @@ public class Fahrzeugvermietung {
         }
     }
     public boolean checkReservierung (Person person, Fahrzeug fahrzeug) {
-        if (person.getAlter()>=18)
+        if (person.getAlter()>=18 && reservierung.size() == 0)
             return true;
-        if (reservierung.size() == 0)
-            return true;
-        else {
+        else if (person.getAlter()>=18) {
             for (int i = reservierung.size(); i > 0; --i) {
+                if (reservierung.get(i - 1).getPerson().getVorname() == person.getVorname() &&
+                        reservierung.get(i - 1).getPerson().getNachname() == person.getNachname() &&
+                    reservierung.get(i - 1).getPerson().getAlter() == person.getAlter()) {
+                    return false;
+                }
                 if ()
             }
         }
