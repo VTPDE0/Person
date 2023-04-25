@@ -9,6 +9,8 @@ public class Main {
         person.setAlter(25);
 
         // Get-Methoden für die Person-Eingenschaften
+        System.out.println();
+        System.out.println("_____Person:_____");
         System.out.println("Vorname: " + person.getVorname()); //  public String getVorname()
         System.out.println("Nachname: " + person.getNachname());
         System.out.println("Alter: " + person.getAlter());
@@ -41,7 +43,7 @@ public class Main {
 
         // Get-Methoden für die Auto-Eingenschaften
         System.out.println();
-        System.out.println("Auto:");
+        System.out.println("_____Auto:_____");
         System.out.println("Marke: " + auto.getMarke());
         System.out.println("Modell: " + auto.getModell());
         System.out.println("Farbe: " + auto.getFarbe());
@@ -52,7 +54,7 @@ public class Main {
 
         // Get-Methoden für die Motorrad-Eingenschaften
         System.out.println();
-        System.out.println("Motorrad:");
+        System.out.println("_____Motorrad:_____");
         System.out.println("Marke: " + motorrad.getMarke());
         System.out.println("Modell: " + motorrad.getModell());
         System.out.println("Farbe: " + motorrad.getFarbe());
@@ -86,6 +88,7 @@ public class Main {
 
         // Ausgabe der reservierten Person und des reservierten Fahrzeugs
         System.out.println();
+        System.out.println("_____Reservierung:_____");
         System.out.println("Reservierte Person: " + reserviertePerson.getVorname() + " " + reserviertePerson.getNachname());
         System.out.println("Reserviertes Fahrzeug: " + reserviertesFahrzeug.getMarke() + " " + reserviertesFahrzeug.getModell());
     }

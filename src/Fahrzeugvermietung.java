@@ -23,6 +23,13 @@ public class Fahrzeugvermietung {
     public boolean checkReservierung (Person person, Fahrzeug fahrzeug) {
         if (person.getAlter()>=18)
             return true;
+        if (reservierung.size() == 0)
+            return true;
+        else {
+            for (int i = reservierung.size(); i > 0; --i) {
+                if ()
+            }
+        }
         return false;
     }
     public void removeReservierung (Reservierung reservierung) {
