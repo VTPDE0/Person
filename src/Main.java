@@ -4,29 +4,38 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 /*
-erstens:    Beschreibung ausfüllen
-zweitens:   Einen Fahrzeug Konstruktor mit allen Feldern/Eingenschaften erstellen
-drittens:   Beschreiben alles was in neuen Konstruktor passiert ist
-viertens:   Neues Objekt mit neues KOnstruktor erstellen, danach alle eingenschaften mit system.out ausgeben (Z25, aber alle Eingenschaften)
+%%gemacht%% Z 13,18,19                          erstens:    Beschreibung ausfüllen
+%%gemacht%% Klasse "Fahrzeug" Z21-29            zweitens:   Einen Fahrzeug Konstruktor mit allen Feldern/Eingenschaften erstellen
+%%gemacht%% Klasse "Fahrzeug" Z21-29            drittens:   Beschreiben alles was in neuen Konstruktor passiert ist
+%%gemacht%% Z23 und 31-3                        viertens:   Neues Objekt mit neues Konstruktor erstellen, danach alle eingenschaften mit system.out ausgeben
 */
         /*
-
+Fahrzeugvermietung (großgeschrieben) ist eine Klasse, davon wird ein Objekt vermietung (kleingeschrieben) erzeugt. Objekt übernimmt Eingenschaften von Klasse Fahrzeugvermietung.
          */
         Fahrzeugvermietung vermietung = new Fahrzeugvermietung();
 
         /*
-
+Fahrzeug (großgeschrieben) ist eine Klasse, davon wird ein Objekt fahrzeug1 (kleingeschrieben) erzeugt. Objekt übernimmt Eingenschaften von Konstruktor Fahrzeug ohne irgendwelche Eingenschaften.
+Fahrzeug (großgeschrieben) ist eine Klasse, davon wird ein Objekt fahrzeug2 (kleingeschrieben) erzeugt. Objekt übernimmt Eingenschaften von Konstruktor Fahrzeug mit Parameter "Marke" der war zu ABS unbenannt und hat ein Wert "BMW"
          */
         Fahrzeug fahrzeug1 = new Fahrzeug();
         Fahrzeug fahrzeug2 = new Fahrzeug("BMW");
-
+        Fahrzeug fahrzeug3 = new Fahrzeug("randomMarke", "randomModell", "randomFarbe", "randomKennzeichen");
 
         System.out.println("Fahrzeug1: " + fahrzeug1.getMarke()); //Fahrzeug1:
         System.out.println("Fahrzeug1: " + fahrzeug1.getKennzeichen()); //Fahrzeug1:
-       
 
+        System.out.println("Fahrzeug2: " + fahrzeug2.getMarke()); //Fahrzeug2:
+        System.out.println("Fahrzeug2: " + fahrzeug2.getKennzeichen()); //Fahrzeug2:
+
+        System.out.println("Fahrzeug3: " + fahrzeug3.getMarke()); //Fahrzeug3:
+        System.out.println("Fahrzeug3: " + fahrzeug3.getModell()); //Fahrzeug3:
+        System.out.println("Fahrzeug3: " + fahrzeug3.getFarbe());
+        System.out.println("Fahrzeug3: " + fahrzeug3.getKennzeichen());
+
+        /*_____________________________________________________________________________________
         // Erstellung eines Objekts der Klasse Person
-        /*Person person1 = new Person();
+        Person person1 = new Person();
 
         // Set-Methoden für die Person-Eingenschaften
         person1.setVorname("Max");
