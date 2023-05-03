@@ -131,14 +131,10 @@ public class Main {
         auto5.setAnzahlTueren(4);
         auto5.setAutomatikGetriebe(true);
 
-        Motorrad auto6 = new Auto();
-        auto5.setMarke("Mercedes-Benz");
-        auto5.setModell("C-Klasse");
-        auto5.setFarbe("Silber");
-        auto5.setKennzeichen("S-NZ 246");
-        auto5.setFelgenDurchmesser(19.0);
-        auto5.setAnzahlTueren(4);
-        auto5.setAutomatikGetriebe(true);
+        Motorrad motorrad1 = new Motorrad();
+        motorrad.setCcm(20);
+        motorrad.setvMax(11);
+        motorrad.setTankinhalt(15);
 
         // Eine Reservierung erstellen und Person und Fahrzeug setzen
         Reservierung reservierung1 = new Reservierung(person1, auto1);
