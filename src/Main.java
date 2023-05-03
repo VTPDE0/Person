@@ -1,7 +1,32 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
+/*
+erstens:    Beschreibung ausfüllen
+zweitens:   Einen Fahrzeug Konstruktor mit allen Feldern/Eingenschaften erstellen
+drittens:   Beschreiben alles was in neuen Konstruktor passiert ist
+viertens:   Neues Objekt mit neues KOnstruktor erstellen, danach alle eingenschaften mit system.out ausgeben (Z25, aber alle Eingenschaften)
+*/
+        /*
+
+         */
+        Fahrzeugvermietung vermietung = new Fahrzeugvermietung();
+
+        /*
+
+         */
+        Fahrzeug fahrzeug1 = new Fahrzeug();
+        Fahrzeug fahrzeug2 = new Fahrzeug("BMW");
+
+
+        System.out.println("Fahrzeug1: " + fahrzeug1.getMarke()); //Fahrzeug1:
+        System.out.println("Fahrzeug1: " + fahrzeug1.getKennzeichen()); //Fahrzeug1:
+       
+
         // Erstellung eines Objekts der Klasse Person
-        Person person1 = new Person();
+        /*Person person1 = new Person();
 
         // Set-Methoden für die Person-Eingenschaften
         person1.setVorname("Max");
@@ -95,7 +120,7 @@ public class Main {
         habe oben das Gleiche gemacht Z11*/
 
 
-        Auto auto3 = new Auto();
+        /*Auto auto3 = new Auto();
         auto3.setMarke("BMW");
         auto3.setModell("3er");
         auto3.setFarbe("schwarz");
@@ -186,6 +211,6 @@ public class Main {
         System.out.println("_____Reservierung5:_____");
         System.out.println("Reservierte Person: " + reserviertePerson5.getVorname() + " " + reserviertePerson5.getNachname());
         System.out.println("Reserviertes Fahrzeug: " + reserviertesFahrzeug5.getMarke() + " " + reserviertesFahrzeug5.getModell());
-
+*/
     }
 }

@@ -4,6 +4,19 @@ public class Fahrzeug {
     private String modell;
     private String farbe;
     private String kennzeichen;
+    //new Fahrzeug ();
+
+
+    //Konstruktor 1
+    public Fahrzeug() {
+
+    }
+
+    //Konstruktor 2
+    public Fahrzeug(String ASD) {
+        setMarke(ASD);
+    }
+
 
     public String getMarke() {
         return marke;

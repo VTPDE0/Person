@@ -8,19 +8,6 @@ public class Fahrzeugvermietung {
     public void addFahrzeuge(Fahrzeug fahrzeug) {
         this.fahrzeuge.add(fahrzeug);
     }
-    /*
-    - main
-        - Fahrzeugvermietung Objekt erzeugen
-        - Fahrzeuge Objekte erzeugen mehrere 5 Autos und 3 Motorräder
-        - Alle Fahrzeuge zu der Liste "Fahrzeug" hinzufügen mit addFahrzeuge von Fahrzeugvermietung Klasse
-        - 7 Personen erstellen die unterschiedlich alt sind
-        - Reservierung mit einer Person und ein Fahrzeug erstellen mit addReservierung Funktion von Klasse Fahrzeugvermietung
-            - addReservierung prüft das Alter der Person und gibt eine Fehlermedlung aus (wenn es nicht erlaubt ist (Person ist 17))
-            - addReservierung prüft ob Fahrzeug bereits reserviert ist und gibt eine Fehlermedlung wenn nötig
-            - addReservierung prüft ob Person hat schon eine Fahrzeug reserviert und gibt eine Fehlermedlung wenn das ist der Fall
-            - addReservierung speichert neue Reservierung wen alles passt in die Reservierung Liste
-                - reservierung.add (neue Reservierung Objekt mit Fahrzeug und Person)
-    */
 
     public void removeFahrzeug(Fahrzeug fahrzeug) {
         this.fahrzeuge.remove(fahrzeug);
