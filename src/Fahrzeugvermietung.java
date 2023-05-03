@@ -8,34 +8,61 @@ public class Fahrzeugvermietung {
     public void addFahrzeuge(Fahrzeug fahrzeug) {
         this.fahrzeuge.add(fahrzeug);
     }
+
     public void removeFahrzeug(Fahrzeug fahrzeug) {
         this.fahrzeuge.remove(fahrzeug);
     }
+
     /*public void removeFahrzeug(int index) {
         this.fahrzeuge.remove(index);
      */
-    public void addReservierung (Person person, Fahrzeug fahrzeug) {
-        if (checkReservierung(person, fahrzeug)==true)
-        {
-            this.reservierung.add(new Reservierung(person, fahrzeug));
+    public void addReservierung(Person person, Fahrzeug fahrzeug) {
+        if (!darfFahren(person)) {
+            //system.out.println("Person erfüllt die Vorrasetzungen nicht");
+            return;
         }
+
+        if (hatPersonBereitsReserviert(person)) {
+            System.out.println("Man darf nur 1x reservieren");
+            return;
+        }
+
+        /*if (checkReservierung(person, fahrzeug) == true) {
+            this.reservierung.add(new Reservierung(person, fahrzeug));
+        }*/
     }
-    public boolean checkReservierung (Person person, Fahrzeug fahrzeug) {
-        if (person.getAlter()>=18 && reservierung.size() == 0)
-            return true;
-        else if (person.getAlter()>=18) {
-            for (int i = reservierung.size(); i > 0; --i) {
-                if (reservierung.get(i - 1).getPerson().getVorname() == person.getVorname() &&
-                        reservierung.get(i - 1).getPerson().getNachname() == person.getNachname() &&
-                    reservierung.get(i - 1).getPerson().getAlter() == person.getAlter()) {
-                    return false;
-                }
-                if ()
+
+    //                      |
+    // [ res1, res2, res3, res4 ] => this.reservierung
+    // res4.person     res4.fahrzeug
+
+    private boolean hatPersonBereitsReserviert(Person person) {
+        for (Reservierung current : this.reservierung) {
+            if (current.getPerson().equals(person)) {
+                return true;
             }
         }
+
         return false;
     }
-    public void removeReservierung (Reservierung reservierung) {
+
+    private boolean darfFahren(Person person) {
+        if (person.getAlter() < 18) {
+            return false;
+        }
+
+        return true;
+    }
+
+    public boolean checkReservierung(Person person, Fahrzeug fahrzeug) {
+        if (person.getAlter() >= 18)
+            return true;
+
+
+        return false;
+    }
+
+    public void removeReservierung(Reservierung reservierung) {
         this.reservierung.remove(reservierung);
     }
 }
