@@ -19,7 +19,7 @@ Fahrzeug (großgeschrieben) ist eine Klasse, davon wird ein Objekt fahrzeug1 (kl
 Fahrzeug (großgeschrieben) ist eine Klasse, davon wird ein Objekt fahrzeug2 (kleingeschrieben) erzeugt. Objekt übernimmt Eigenschaften von Konstruktor 2 (Fahrzeug mit Parameter "Marke" der war zu ABS unbenannt und hat ein Wert "BMW")
 in die Klammern sind die Werte für die Parameters die haben wir für dementsprechenden Konstruktoren eingelegt in Klasse "Fahrzeug"
          */
-
+//Habe vergessen richtiger Kommentar zu schreiben
         //Hier erzeugen wir 5 Fahrzeuge
         Fahrzeug fahrzeug1 = new Fahrzeug("randomMarke1", "randomModell1", "randomFarbe1", "randomKennzeichen1");
         Fahrzeug fahrzeug2 = new Fahrzeug("randomMarke2", "randomModell2", "randomFarbe2", "randomKennzeichen2");
