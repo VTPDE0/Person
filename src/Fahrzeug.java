@@ -17,17 +17,16 @@ public class Fahrzeug {
         setMarke(ASD);
     }
 
-
+    //Konstruktor 3
     //hier erstellen wir neuer Konstruktor der hat eigene Parameters: "marke", "modell", "farbe" und "kennzeichen".
     // Werte für diese Parameters müssen in die Methode Main angegeben werden
     public Fahrzeug(String marke, String modell, String farbe, String kennzeichen) {
         //hier sind die Methoden zum Wert übergeben an die Parameters
-        setMarke(marke);            //Methode setMarke heißt "marke"       ?????????????
+        setMarke(marke);            //Methode setMarke heißt "marke"       ("marke" ist ein Platzhalter oder auch Name, kann man egal wie nennen)
         setModell(modell);
         setFarbe(farbe);
         setKennzeichen(kennzeichen);
     }
-
 
     public String getMarke() {
         return marke;

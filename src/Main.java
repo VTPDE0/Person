@@ -15,12 +15,38 @@ Fahrzeugvermietung (großgeschrieben) ist eine Klasse, davon wird ein Objekt ver
         Fahrzeugvermietung vermietung = new Fahrzeugvermietung();
 
         /*
-Fahrzeug (großgeschrieben) ist eine Klasse, davon wird ein Objekt fahrzeug1 (kleingeschrieben) erzeugt. Objekt übernimmt Eingenschaften von Konstruktor Fahrzeug ohne irgendwelche Eingenschaften.
-Fahrzeug (großgeschrieben) ist eine Klasse, davon wird ein Objekt fahrzeug2 (kleingeschrieben) erzeugt. Objekt übernimmt Eingenschaften von Konstruktor Fahrzeug mit Parameter "Marke" der war zu ABS unbenannt und hat ein Wert "BMW"
+Fahrzeug (großgeschrieben) ist eine Klasse, davon wird ein Objekt fahrzeug1 (kleingeschrieben) erzeugt. Objekt übernimmt Eigenschaften von Konstruktor 1
+Fahrzeug (großgeschrieben) ist eine Klasse, davon wird ein Objekt fahrzeug2 (kleingeschrieben) erzeugt. Objekt übernimmt Eigenschaften von Konstruktor 2 (Fahrzeug mit Parameter "Marke" der war zu ABS unbenannt und hat ein Wert "BMW")
+in die Klammern sind die Werte für die Parameters die haben wir für dementsprechenden Konstruktoren eingelegt in Klasse "Fahrzeug"
          */
-        Fahrzeug fahrzeug1 = new Fahrzeug();
-        Fahrzeug fahrzeug2 = new Fahrzeug("BMW");
-        Fahrzeug fahrzeug3 = new Fahrzeug("randomMarke", "randomModell", "randomFarbe", "randomKennzeichen");
+
+        //Hier erzeugen wir 5 Fahrzeuge
+        Fahrzeug fahrzeug1 = new Fahrzeug("randomMarke1", "randomModell1", "randomFarbe1", "randomKennzeichen1");
+        Fahrzeug fahrzeug2 = new Fahrzeug("randomMarke2", "randomModell2", "randomFarbe2", "randomKennzeichen2");
+        Fahrzeug fahrzeug3 = new Fahrzeug("randomMarke3", "randomModell3", "randomFarbe3", "randomKennzeichen3");
+        Fahrzeug fahrzeug4 = new Fahrzeug("randomMarke4", "randomModell4", "randomFarbe4", "randomKennzeichen4");
+        Fahrzeug fahrzeug5 = new Fahrzeug("randomMarke5", "randomModell5", "randomFarbe5", "randomKennzeichen5");
+        //Hier erzeugen wir 5 Autos
+        Auto Auto1 = new Auto("rMarke1", "rModell1", "rFarbe1", "randomKennzeichen1", "17", "4", "true");
+        Auto Auto2 = new Auto("rMarke2", "rModell2", "rFarbe2", "randomKennzeichen2", "18", "5", "false");
+        Auto Auto3 = new Auto("rMarke3", "rModell3", "rFarbe3", "randomKennzeichen3", "16", "4", "false");
+        Auto Auto4 = new Auto("rMarke4", "rModell4", "rFarbe4", "randomKennzeichen4", "17", "3", "true");
+        Auto Auto5 = new Auto("rMarke5", "rModell5", "rFarbe5", "randomKennzeichen5", "15", "4", "true");
+
+        //Hier erzeugen wir 3 Motorräder
+        Motorrad motorrad1 = new Motorrad("rMarke1mtrd", "rModell1mtrd", "rFarbe1mtrd", "rKennzeichen1mrtd", "randomCCM", "randomVMax", "rTankinhalt");
+        Motorrad motorrad2 = new Motorrad("rMarke2mtrd", "rModell2mtrd", "rFarbe2mtrd", "rKennzeichen2mrtd", "randomCCM", "randomVMax", "rTankinhalt");
+        Motorrad motorrad3 = new Motorrad("rMarke3mtrd", "rModell3mtrd", "rFarbe3mtrd", "rKennzeichen3mrtd", "randomCCM", "randomVMax", "rTankinhalt");
+
+
+        //7 Personen
+        Person person1 = new Person("Name1", "Nachname1", "18");
+        Person person2 = new Person("Name2", "Nachname2", "12");
+        Person person3 = new Person("Name3", "Nachname3", "22");
+        Person person4 = new Person("Name4", "Nachname4", "34");
+        Person person5 = new Person("Name5", "Nachname5", "13");
+        Person person6 = new Person("Name6", "Nachname6", "45");
+        Person person7 = new Person("Name7", "Nachname7", "16");
 
         System.out.println("Fahrzeug1: " + fahrzeug1.getMarke()); //Fahrzeug1:
         System.out.println("Fahrzeug1: " + fahrzeug1.getKennzeichen()); //Fahrzeug1:

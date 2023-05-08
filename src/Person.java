@@ -5,6 +5,13 @@ public class Person {
     private int alter;
     private Reservierung reservierung;
 
+    //konstruktor für die Personen mit 3 Parameters
+    public Person(String vorname, String nachname, int alter) {
+        setVorname(vorname);
+        setNachname(nachname);
+        setAlter(alter);
+    }
+
     public String getVorname() {
         return vorname;
     }
