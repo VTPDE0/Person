@@ -18,7 +18,7 @@ public class Fahrzeugvermietung {
      */
     public void addReservierung(Person person, Fahrzeug fahrzeug) {
         if (!darfFahren(person)) {
-            //system.out.println("Person erfüllt die Vorrasetzungen nicht");
+            System.out.println("Person erfüllt die Vorrasetzungen nicht");
             return;
         }
 

@@ -12,7 +12,8 @@ public class Main {
         /*
 Fahrzeugvermietung (großgeschrieben) ist eine Klasse, davon wird ein Objekt vermietung (kleingeschrieben) erzeugt. Objekt übernimmt Eingenschaften von Klasse Fahrzeugvermietung.
          */
-        Fahrzeugvermietung vermietung = new Fahrzeugvermietung();
+        //Hier erzeugen wir neue Liste die heißt "fahrzeuge"
+        Fahrzeugvermietung fahrzeuge = new Fahrzeugvermietung();
 
         /*
 Fahrzeug (großgeschrieben) ist eine Klasse, davon wird ein Objekt fahrzeug1 (kleingeschrieben) erzeugt. Objekt übernimmt Eigenschaften von Konstruktor 1
@@ -20,44 +21,66 @@ Fahrzeug (großgeschrieben) ist eine Klasse, davon wird ein Objekt fahrzeug2 (kl
 in die Klammern sind die Werte für die Parameters die haben wir für dementsprechenden Konstruktoren eingelegt in Klasse "Fahrzeug"
          */
 //Habe vergessen richtiger Kommentar zu schreiben
-        //Hier erzeugen wir 5 Fahrzeuge
+        /*Hier erzeugen wir 5 Fahrzeuge
         Fahrzeug fahrzeug1 = new Fahrzeug("randomMarke1", "randomModell1", "randomFarbe1", "randomKennzeichen1");
         Fahrzeug fahrzeug2 = new Fahrzeug("randomMarke2", "randomModell2", "randomFarbe2", "randomKennzeichen2");
         Fahrzeug fahrzeug3 = new Fahrzeug("randomMarke3", "randomModell3", "randomFarbe3", "randomKennzeichen3");
         Fahrzeug fahrzeug4 = new Fahrzeug("randomMarke4", "randomModell4", "randomFarbe4", "randomKennzeichen4");
-        Fahrzeug fahrzeug5 = new Fahrzeug("randomMarke5", "randomModell5", "randomFarbe5", "randomKennzeichen5");
+        Fahrzeug fahrzeug5 = new Fahrzeug("randomMarke5", "randomModell5", "randomFarbe5", "randomKennzeichen5");*/
+
         //Hier erzeugen wir 5 Autos
-        Auto Auto1 = new Auto("rMarke1", "rModell1", "rFarbe1", "randomKennzeichen1", "17", "4", "true");
-        Auto Auto2 = new Auto("rMarke2", "rModell2", "rFarbe2", "randomKennzeichen2", "18", "5", "false");
-        Auto Auto3 = new Auto("rMarke3", "rModell3", "rFarbe3", "randomKennzeichen3", "16", "4", "false");
-        Auto Auto4 = new Auto("rMarke4", "rModell4", "rFarbe4", "randomKennzeichen4", "17", "3", "true");
-        Auto Auto5 = new Auto("rMarke5", "rModell5", "rFarbe5", "randomKennzeichen5", "15", "4", "true");
+        Auto auto1 = new Auto("rMarke1", "rModell1", "rFarbe1", "randomKennzeichen1", 17, 4, true);
+        Auto auto2 = new Auto("rMarke2", "rModell2", "rFarbe2", "randomKennzeichen2", 18, 5, false);
+        Auto auto3 = new Auto("rMarke3", "rModell3", "rFarbe3", "randomKennzeichen3", 16, 4, false);
+        Auto auto4 = new Auto("rMarke4", "rModell4", "rFarbe4", "randomKennzeichen4", 17, 3, true);
+        Auto auto5 = new Auto("rMarke5", "rModell5", "rFarbe5", "randomKennzeichen5", 15, 4, true);
 
         //Hier erzeugen wir 3 Motorräder
-        Motorrad motorrad1 = new Motorrad("rMarke1mtrd", "rModell1mtrd", "rFarbe1mtrd", "rKennzeichen1mrtd", "randomCCM", "randomVMax", "rTankinhalt");
-        Motorrad motorrad2 = new Motorrad("rMarke2mtrd", "rModell2mtrd", "rFarbe2mtrd", "rKennzeichen2mrtd", "randomCCM", "randomVMax", "rTankinhalt");
-        Motorrad motorrad3 = new Motorrad("rMarke3mtrd", "rModell3mtrd", "rFarbe3mtrd", "rKennzeichen3mrtd", "randomCCM", "randomVMax", "rTankinhalt");
+        Motorrad motorrad1 = new Motorrad("rMarke1mtrd", "rModell1mtrd", "rFarbe1mtrd", "rKennzeichen1mrtd", 600, 250.0, 15.0);
+        Motorrad motorrad2 = new Motorrad("rMarke2mtrd", "rModell2mtrd", "rFarbe2mtrd", "rKennzeichen2mrtd", 610, 240.50, 17.5);
+        Motorrad motorrad3 = new Motorrad("rMarke3mtrd", "rModell3mtrd", "rFarbe3mtrd", "rKennzeichen3mrtd", 590, 275.80, 13.0);
 
 
         //7 Personen
-        Person person1 = new Person("Name1", "Nachname1", "18");
-        Person person2 = new Person("Name2", "Nachname2", "12");
-        Person person3 = new Person("Name3", "Nachname3", "22");
-        Person person4 = new Person("Name4", "Nachname4", "34");
-        Person person5 = new Person("Name5", "Nachname5", "13");
-        Person person6 = new Person("Name6", "Nachname6", "45");
-        Person person7 = new Person("Name7", "Nachname7", "16");
+        Person person1 = new Person("Name1", "Nachname1", 18);
+        Person person2 = new Person("Name2", "Nachname2", 12);
+        Person person3 = new Person("Name3", "Nachname3", 22);
+        Person person4 = new Person("Name4", "Nachname4", 34);
+        Person person5 = new Person("Name5", "Nachname5", 13);
+        Person person6 = new Person("Name6", "Nachname6", 45);
+        Person person7 = new Person("Name7", "Nachname7", 16);
 
-        System.out.println("Fahrzeug1: " + fahrzeug1.getMarke()); //Fahrzeug1:
-        System.out.println("Fahrzeug1: " + fahrzeug1.getKennzeichen()); //Fahrzeug1:
+        //Ausgabe
+        System.out.println("Auto1: " + auto1.getMarke()); //Fahrzeug1:
+        System.out.println("Auto1: " + auto1.getKennzeichen()); //Fahrzeug1:
 
-        System.out.println("Fahrzeug2: " + fahrzeug2.getMarke()); //Fahrzeug2:
-        System.out.println("Fahrzeug2: " + fahrzeug2.getKennzeichen()); //Fahrzeug2:
+        System.out.println("Motorrad2: " + auto2.getMarke()); //Fahrzeug2:
+        System.out.println("Motorrad2: " + auto2.getKennzeichen()); //Fahrzeug2:
 
-        System.out.println("Fahrzeug3: " + fahrzeug3.getMarke()); //Fahrzeug3:
-        System.out.println("Fahrzeug3: " + fahrzeug3.getModell()); //Fahrzeug3:
-        System.out.println("Fahrzeug3: " + fahrzeug3.getFarbe());
-        System.out.println("Fahrzeug3: " + fahrzeug3.getKennzeichen());
+        System.out.println("Auto3: " + auto3.getMarke()); //Fahrzeug3:
+        System.out.println("Auto3: " + auto3.getModell()); //Fahrzeug3:
+        System.out.println("Auto3: " + auto3.getFarbe());
+        System.out.println("Auto3: " + auto3.getKennzeichen());
+
+        fahrzeuge.addFahrzeuge(auto1);
+        fahrzeuge.addFahrzeuge(auto2);
+        fahrzeuge.addFahrzeuge(auto3);
+        fahrzeuge.addFahrzeuge(auto4);
+        fahrzeuge.addFahrzeuge(auto4);
+        fahrzeuge.addFahrzeuge(auto5);
+        fahrzeuge.addFahrzeuge(motorrad1);
+        fahrzeuge.addFahrzeuge(motorrad2);
+        fahrzeuge.addFahrzeuge(motorrad3);
+
+
+        /*Warum das ding funktioniert nicht?
+        for (Fahrzeug fahrzeug : fahrzeuge) {
+            System.out.println(fahrzeug);
+             }*/
+//Hier werden die Reservierungen erstellt und dank Methoden "darfFahren" und "checkReservierung" von Klasse Fahrzeugvermietung geprüft
+        fahrzeuge.addReservierung(person5, auto1);
+        fahrzeuge.addReservierung(person1, auto1);
+        fahrzeuge.addReservierung(person1, auto4);
 
         /*_____________________________________________________________________________________
         // Erstellung eines Objekts der Klasse Person
