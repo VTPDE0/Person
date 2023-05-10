@@ -16,6 +16,7 @@ public class Fahrzeugvermietung {
     /*public void removeFahrzeug(int index) {
         this.fahrzeuge.remove(index);
      */
+    //Die Methode hier fügt Reservierung hinzu, wenn die Voraussetzungen sind Erfüllt (z.B Person muss < 18 Jahre alt sein(darfFahren) oder wenn )
     public void addReservierung(Person person, Fahrzeug fahrzeug) {
         if (!darfFahren(person)) {
             System.out.println("Person erfüllt die Vorrasetzungen nicht");

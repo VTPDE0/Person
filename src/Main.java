@@ -81,6 +81,7 @@ in die Klammern sind die Werte für die Parameters die haben wir für dementspre
         fahrzeuge.addReservierung(person5, auto1);
         fahrzeuge.addReservierung(person1, auto1);
         fahrzeuge.addReservierung(person1, auto4);
+        fahrzeuge.addReservierung(person1, auto4);
 
         /*_____________________________________________________________________________________
         // Erstellung eines Objekts der Klasse Person
