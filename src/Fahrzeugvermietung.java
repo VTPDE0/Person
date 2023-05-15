@@ -19,18 +19,37 @@ public class Fahrzeugvermietung {
     //Die Methode hier fügt Reservierung hinzu, wenn die Voraussetzungen sind Erfüllt (z.B Person muss < 18 Jahre alt sein(darfFahren) oder wenn )
     public void addReservierung(Person person, Fahrzeug fahrzeug) {
         if (!darfFahren(person)) {
-            System.out.println("Person erfüllt die Vorrasetzungen nicht");
+            System.out.println("Reservierung wird nicht erstellt");
+            System.out.println("Person erfüllt die Voraussetzungen nicht");
+            System.out.println("Person muss mindestens 18 Jahre alt sein");
+            System.out.println("-Name:" + person.getNachname() + "; Vorname:" + person.getVorname() + "; Alter:" + person.getAlter() + ".");
+            System.out.println("___________________________________________");
             return;
         }
-
+//Methode zum Prüfen ob Person hat nur einmal reserviert
         if (hatPersonBereitsReserviert(person)) {
-            System.out.println("Man darf nur 1x reservieren");
+            System.out.println("Reservierung wird nicht erstellt");
+            System.out.println("Diese Person hat schon ein Auto bereits reserviert");
+            System.out.println("-Name:" + person.getNachname() + "; Vorname:" + person.getVorname() + "; Alter:" + person.getAlter() + ".");
+            System.out.println("___________________________________________");
             return;
+        } else {
+            System.out.println("Reservierung ist mit der folgenden Fahrzeug");
+            System.out.println("-Marke:" + fahrzeug.getMarke() + "; Modell:" + fahrzeug.getModell() + ".");
+            System.out.println("und folgenden Person");
+            System.out.println("-Name:" + person.getNachname() + "; Vorname:" + person.getVorname() + "; Alter:" + person.getAlter() + ".");
+            System.out.println("erfolgreich erstellt");
+            System.out.println("___________________________________________");
         }
 
-        /*if (checkReservierung(person, fahrzeug) == true) {
+//Methode zum prüfen, ob Fahrzeug mehr als einmal reserviert ist
+        if (checkReservierung(person, fahrzeug) == true) {
             this.reservierung.add(new Reservierung(person, fahrzeug));
-        }*/
+        } else {
+            checkReservierung(person, fahrzeug);
+            System.out.println("Eine Fahrzeug darf nur einmal reserviert sein");
+            System.out.println("___________________________________________");
+        }
     }
 
     //                      |

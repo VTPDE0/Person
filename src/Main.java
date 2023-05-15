@@ -29,28 +29,29 @@ in die Klammern sind die Werte für die Parameters die haben wir für dementspre
         Fahrzeug fahrzeug5 = new Fahrzeug("randomMarke5", "randomModell5", "randomFarbe5", "randomKennzeichen5");*/
 
         //Hier erzeugen wir 5 Autos
-        Auto auto1 = new Auto("rMarke1", "rModell1", "rFarbe1", "randomKennzeichen1", 17, 4, true);
-        Auto auto2 = new Auto("rMarke2", "rModell2", "rFarbe2", "randomKennzeichen2", 18, 5, false);
-        Auto auto3 = new Auto("rMarke3", "rModell3", "rFarbe3", "randomKennzeichen3", 16, 4, false);
-        Auto auto4 = new Auto("rMarke4", "rModell4", "rFarbe4", "randomKennzeichen4", 17, 3, true);
-        Auto auto5 = new Auto("rMarke5", "rModell5", "rFarbe5", "randomKennzeichen5", 15, 4, true);
+        Auto auto1 = new Auto("VW", "Golf", "blau", "B-AB 1234", 17, 4, true);
+        Auto auto2 = new Auto("BMW", "3er", "schwarz", "F-XY 789", 18, 5, false);
+        Auto auto3 = new Auto("Audi", "A4", "rot", "M-CD 456", 16, 4, false);
+        Auto auto4 = new Auto("Ford", "Fiesta", "grün", "K-LM 321", 17, 3, true);
+        Auto auto5 = new Auto("Mercedes-Benz", "C-Klasse", "silber", "S-NZ 246", 15, 4, true);
 
         //Hier erzeugen wir 3 Motorräder
-        Motorrad motorrad1 = new Motorrad("rMarke1mtrd", "rModell1mtrd", "rFarbe1mtrd", "rKennzeichen1mrtd", 600, 250.0, 15.0);
-        Motorrad motorrad2 = new Motorrad("rMarke2mtrd", "rModell2mtrd", "rFarbe2mtrd", "rKennzeichen2mrtd", 610, 240.50, 17.5);
-        Motorrad motorrad3 = new Motorrad("rMarke3mtrd", "rModell3mtrd", "rFarbe3mtrd", "rKennzeichen3mrtd", 590, 275.80, 13.0);
+        Motorrad motorrad1 = new Motorrad("Honda", "CBR600", "rot", "K-KA 5678", 600, 250.0, 15.0);
+        Motorrad motorrad2 = new Motorrad("Kawasaki", "Ninja 300", "schwarz", "rKennzeichen2mrtd", 610, 240.50, 17.5);
+        Motorrad motorrad3 = new Motorrad("Yamaha", "YZF-R1", "blau", "W-WW 9876", 590, 275.80, 13.0);
 
 
         //7 Personen
-        Person person1 = new Person("Name1", "Nachname1", 18);
-        Person person2 = new Person("Name2", "Nachname2", 12);
-        Person person3 = new Person("Name3", "Nachname3", 22);
-        Person person4 = new Person("Name4", "Nachname4", 34);
-        Person person5 = new Person("Name5", "Nachname5", 13);
-        Person person6 = new Person("Name6", "Nachname6", 45);
-        Person person7 = new Person("Name7", "Nachname7", 16);
+        Person person1 = new Person("Max", "Mustermann", 18);
+        Person person2 = new Person("Emma", "Müller", 12);
+        Person person3 = new Person("Ben", "Schmidt", 22);
+        Person person4 = new Person("Mia", "Schneider", 34);
+        Person person5 = new Person("Hannah", "Meyer", 13);
+        Person person6 = new Person("Lukas", "Fischer", 45);
+        Person person7 = new Person("Moritz", "Webber", 16);
 
-        //Ausgabe
+        /*
+        //Ausgabe funktioniert gut, nur nimmt viel Platz in Konsole
         System.out.println("Auto1: " + auto1.getMarke()); //Fahrzeug1:
         System.out.println("Auto1: " + auto1.getKennzeichen()); //Fahrzeug1:
 
@@ -61,7 +62,7 @@ in die Klammern sind die Werte für die Parameters die haben wir für dementspre
         System.out.println("Auto3: " + auto3.getModell()); //Fahrzeug3:
         System.out.println("Auto3: " + auto3.getFarbe());
         System.out.println("Auto3: " + auto3.getKennzeichen());
-
+        */
         fahrzeuge.addFahrzeuge(auto1);
         fahrzeuge.addFahrzeuge(auto2);
         fahrzeuge.addFahrzeuge(auto3);
@@ -81,7 +82,28 @@ in die Klammern sind die Werte für die Parameters die haben wir für dementspre
         fahrzeuge.addReservierung(person5, auto1);
         fahrzeuge.addReservierung(person1, auto1);
         fahrzeuge.addReservierung(person1, auto4);
+
+        /*
+        - Erwartetes Verhalten
+            - wenn eine Person eine zweite Reservierung erstellt, soll eine Fehlermeldung erscheinen und keine Reservierung erzeugt werden
+        - Beobachtetes Verhalten
+            - eine Person kann mehr als eine Reservierung erstellen. Eine Fehlermeldung wird nicht angezeigt.
+                - wird eine Reservierung beim ersten Versuch erstellt?
+                - werden alle Prüfungen richtig ausgeführt?
+         %%% Erledigt? %%%
+         */
+
         fahrzeuge.addReservierung(person1, auto4);
+        fahrzeuge.addReservierung(person3, auto1);
+
+         /*
+        - Erwartetes Verhalten
+            - wenn ein Auto wird zweites Mal reservieren, soll eine Fehlermeldung erscheinen und keine Reservierung erzeugt werden
+        - Beobachtetes Verhalten
+            - ein Auto kann mehr als einmal reserviert werden. Eine Fehlermeldung wird nicht angezeigt.
+                - wird eine Reservierung beim ersten Versuch erstellt?
+                - werden alle Prüfungen richtig ausgeführt?
+         */
 
         /*_____________________________________________________________________________________
         // Erstellung eines Objekts der Klasse Person

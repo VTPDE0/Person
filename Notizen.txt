@@ -1,0 +1,49 @@
+   /*
+    - main
+     +  1 - Fahrzeugvermietung Objekt erzeugen ()
+     +  2 - mehrere Fahrzeug-Objekte erzeugen (5 Autos und 3 Motorräder)
+     +  3 - Alle Fahrzeuge zu der Liste "Fahrzeug" hinzufügen mit addFahrzeuge von Fahrzeugvermietung Klasse
+     +  4 - 7 Personen erstellen die unterschiedlich alt sind
+     +  5 - Reservierung mit einer Person und ein Fahrzeug erstellen mit addReservierung Funktion von Klasse Fahrzeugvermietung
+	 +	6  		- addReservierung prüft das Alter der Person und gibt eine Fehlermedlung aus (wenn es nicht erlaubt ist (Person ist 17))
+        7  		- addReservierung prüft ob Fahrzeug bereits reserviert ist und gibt eine Fehlermedlung wenn nötig
+        8   	- addReservierung prüft ob Person hat schon eine Fahrzeug reserviert und gibt eine Fehlermedlung wenn das ist der Fall
+        9 		- addReservierung speichert neue Reservierung wen alles passt in die Reservierung Liste
+        10  	- reservierung.add (neue Reservierung Objekt mit Fahrzeug und Person)
+    */
+
+	2023.05.08
+	ich habe früher nur die Fahrzeuge Erstellt, jetzt ich Erstelle die Autos und die Motorräder.
+	Mit Eingenschaften von Eltern Klasse und Klasse die erbt.
+	Ich habe 2 Konstruktoren für Motorrad und Auto Klassen erstellt.
+	5 Autos und 3 Motorräder sind erstellt.
+	Dann ich habe zurecht mit die Konstruktoren von Klassen die erben von andere Klassen gekommen.
+	Aber jetzt ich habe ein Fehler mit die Datentyps bei neue Objekte (Autos, Motorräder) getroffen.
+	Habe Konstruktor Person in Klasse Person erstellt
+	und die 7 Personen
+	leider habe viel zu viel Zeit mit die DatenTyps verbracht. Ich verstehe nicht warum ich kann nicht in mein Konstruktor nur String nutzen, sonst ich bekomme Fehlermeldung
+	_________________
+	2023.05.09
+	1) ich habe endlich Mal verstanden wo kommt Fehlermeldung her. Ich habe die Anführungszeichen gelöscht und Parameters als Zahl (z.B. bei int) oder true/false (bei boolean) eingegeben.
+	2) ich habe Ausgabe von neuerstellte Autos und Motorräder mit Get Methoden für Alle Parameters impelemntiert
+	3) ctrl+space ist ein Shortcut zum passende Konstruktor zwischen vorhandene auszuwählen
+	4) habe alle Fahrzeuge in die Liste "fahrzeuge" hinzugefügt
+	5)??? warum ich kann nicht die Liste "fahrzeuge" asugeben lassen?
+	6) Methode addReservierung ist implementiert. Auch addReservierung prüft ob Person 18 ist.
+	    7)	Methode hatPersonBereitsReserviert funktioniert noch nicht
+	_________________
+	2023.05.10
+	Habe mit den Scleifen gearbeitet, die Methoden hatPersonBereitsReserviert und checkReservierung funktionierten nicht, aber darfFahren funktioniert
+	_________________
+	2023.05.15
+	-brake point - rote Punkt
+    -debugger - Modus zur jeden Schritt beim Programmlauf nachvollziehen
+    - in Debugger Modus recht click auf markierte Code und dann "evaluete expression"- zeigt die Ergebnisse von asugefürte Code (wie kann man das besser bescreiben?)
+    - "!" - macht umgekehrt
+    - step over, step into, step out- die blaue "Knöpfe" bedienen Programmlauf in Debuger Modus Schritt bei Schritt
+    - wie kann ich Reserevierungsliste anzuschauen und auch in Konsolle rausgeben? %Erledigt%
+        " /*Warum das ding funktioniert nicht?
+                 for (Fahrzeug fahrzeug : fahrzeuge) {
+                     System.out.println(fahrzeug);
+                      }*/"
+    -hatPersonBereitsReserviert funktioniert und ich weiß warum!
