@@ -13,6 +13,7 @@ public class Motorrad extends Fahrzeug {
     }
 
     public int getCcm() {
+
         return ccm;
     }
 

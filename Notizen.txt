@@ -47,3 +47,16 @@
                      System.out.println(fahrzeug);
                       }*/"
     -hatPersonBereitsReserviert funktioniert und ich weiß warum!
+    _________________
+    2023.05.16
+      +  7  	- addReservierung prüft ob Fahrzeug bereits reserviert ist und gibt eine Fehlermedlung wenn nötig
+      +  8   	- addReservierung prüft ob Person hat schon eine Fahrzeug reserviert und gibt eine Fehlermedlung wenn das ist der Fall
+      +  9 		- addReservierung speichert neue Reservierung wen alles passt in die Reservierung Liste
+      +  10  	- reservierung.add (neue Reservierung Objekt mit Fahrzeug und Person)
+      - ??? Wie formatiere ich den Code beim Speichern? Bei mir das funktioniert nicht, die Zeilen bleiben so:
+         public void removeFahrzeug(Fahrzeug fahrzeug){this.fahrzeuge.remove(fahrzeug);}
+      + Wie kann ich ganzes Projekt umbenennen, sodass es wird nicht kaputt?
+      - (if) verstanden haben
+        - (if) (else)
+        - (if) (else if)
+        - (if) (else if) (else)
