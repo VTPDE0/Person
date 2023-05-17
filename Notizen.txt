@@ -55,8 +55,28 @@
       +  10  	- reservierung.add (neue Reservierung Objekt mit Fahrzeug und Person)
       - ??? Wie formatiere ich den Code beim Speichern? Bei mir das funktioniert nicht, die Zeilen bleiben so:
          public void removeFahrzeug(Fahrzeug fahrzeug){this.fahrzeuge.remove(fahrzeug);}
-      + Wie kann ich ganzes Projekt umbenennen, sodass es wird nicht kaputt?
-      - (if) verstanden haben
+      + Wie kann ich ganzes Projekt umbenennen, sodass es wird nicht kaputt? ()
+      + (if) verstanden haben
         - (if) (else)
         - (if) (else if)
         - (if) (else if) (else)
+    _________________
+      2023.05.17
+      - warum Intellij wollte nicht commiten?
+      - wie kann ich ganzes Projekt mit ctrl+f durchsuchen und nicht nur eines Fenster
+            -kann ich in GitHUb mein Projekt und alle frühere Versionen durchsuchen?
+      - alle Prüfungen für die Methoden (z.B. obAutoSchonReserviertIst) sollen in main sein oder geht es, wenn sie in Fahrzeugvermietung Klasse sind?
+
+      + (jetzt es funktioniert wie es soll funktionieren) obAutoSchonReserviertIst diese Methode man muss anpassen und besser verstehen wie funktioniert es.
+      + (habe geübt, es hat gut funktioniert, ich verstehe es schon gut, aber brauche noch paar Aufgaben, da ich verliere mich oft zwischen alle if else) (if) üben und Beispiele analysieren
+               - (if) (else)
+               - (if) (else if)
+               - (if) (else if) (else)
+      - removeReservierung Methode funktionierend haben
+      - Ausgabe für Fehlermeldungen laut Aufgabe_vtp anpassen?
+      - Liste von Reservierungen mithilfe getReservierungen Methode ausgeben lassen
+            -laut Aufgabe_vtp Ausgabe anpassen
+      - 49 Euro Ticket?
+      - 30 Euro karte monatlich?
+      - Habe mit den Prüfung-Methoden gearbeitet und ins "if else" Kette es umgebaut, auch in main habe ich Reservierungen deutlich markiert für bessere Verständnis.
+      - Mit Shift kann man markierter Text in "" reinpacken (das ding Anführungszeichen oder auch Gänsefüßchen heißt)

@@ -48,7 +48,7 @@ in die Klammern sind die Werte für die Parameters die haben wir für dementspre
         Person person4 = new Person("Mia", "Schneider", 34);
         Person person5 = new Person("Hannah", "Meyer", 13);
         Person person6 = new Person("Lukas", "Fischer", 45);
-        Person person7 = new Person("Moritz", "Webber", 16);
+        Person person7 = new Person("Moritz", "Webber", 28);
 
         /*
         //Ausgabe funktioniert gut, nur nimmt viel Platz in Konsole
@@ -79,9 +79,18 @@ in die Klammern sind die Werte für die Parameters die haben wir für dementspre
             System.out.println(fahrzeug);
              }*/
 //Hier werden die Reservierungen erstellt und dank Methoden "darfFahren" und "checkReservierung" von Klasse Fahrzeugvermietung geprüft
-        fahrzeuge.addReservierung(person5, auto1);
+
+        fahrzeuge.addReservierung(person5, auto3);
+        //darfFahren - falsch
+        //Reservierung wird nicht erstellt    (Person zu jung)                  Hannah Meyer 13 Jahre alt ist (zu jung);           VW Golf noch nicht reserviert (Fahrzeug ist verfügbar)
+
         fahrzeuge.addReservierung(person1, auto1);
+        //addReservierung - true
+        //Reservierung ist erstellt.          (alles in Ordnung)                Max Mustermann 18 Jahre alt ist (alt genug);       VW Golf noch nicht reserviert (Fahrzeug ist verfügbar)
+
         fahrzeuge.addReservierung(person1, auto4);
+        //hatPersonBereitsReserviert - true
+        //Reservierung wird nicht erstellt    (Person hat schon Reservierung)   Max Mustermann 18 Jahre alt ist (alt genug);       Ford Fiesta ist verfügbar (Fahrzeug noch nicht reserviert)
 
         /*
         - Erwartetes Verhalten
@@ -93,8 +102,13 @@ in die Klammern sind die Werte für die Parameters die haben wir für dementspre
          %%% Erledigt? %%%
          */
 
-        fahrzeuge.addReservierung(person1, auto4);
-        fahrzeuge.addReservierung(person3, auto1);
+        fahrzeuge.addReservierung(person4, auto1);
+        //istFahrzeugReserviert - true
+        //Reservierung wird nicht erstellt    (Auto ist schon reserviert)       Mia Schneider 34 Jahre alt ist (alt genug);        Ford Fiesta ist nicht verfügbar (Fahrzeug ist schon reserviert)
+
+        fahrzeuge.addReservierung(person7, motorrad1);
+        //addReservierung - true
+        //Reservierung ist erstellt.           (alles in Ordnung)               Moritz Webber 28 Jahre alt ist (alt genug);        Honda CBR600 noch nicht reserviert (Fahrzeug ist verfügbar)
 
          /*
         - Erwartetes Verhalten
