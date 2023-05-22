@@ -62,10 +62,10 @@
         - (if) (else if) (else)
     _________________
       2023.05.17
-      - warum Intellij wollte nicht commiten?
+      + warum Intellij wollte nicht commiten?
       - wie kann ich ganzes Projekt mit ctrl+f durchsuchen und nicht nur eines Fenster
             -kann ich in GitHUb mein Projekt und alle frühere Versionen durchsuchen?
-      - alle Prüfungen für die Methoden (z.B. obAutoSchonReserviertIst) sollen in main sein oder geht es, wenn sie in Fahrzeugvermietung Klasse sind?
+      + alle Prüfungen für die Methoden (z.B. obAutoSchonReserviertIst) sollen in main sein oder geht es, wenn sie in Fahrzeugvermietung Klasse sind?
 
       + (jetzt es funktioniert wie es soll funktionieren) obAutoSchonReserviertIst diese Methode man muss anpassen und besser verstehen wie funktioniert es.
       + (habe geübt, es hat gut funktioniert, ich verstehe es schon gut, aber brauche noch paar Aufgaben, da ich verliere mich oft zwischen alle if else) (if) üben und Beispiele analysieren
@@ -78,5 +78,40 @@
             -laut Aufgabe_vtp Ausgabe anpassen
       - 49 Euro Ticket?
       - 30 Euro karte monatlich?
-      - Habe mit den Prüfung-Methoden gearbeitet und ins "if else" Kette es umgebaut, auch in main habe ich Reservierungen deutlich markiert für bessere Verständnis.
-      - Mit Shift kann man markierter Text in "" reinpacken (das ding Anführungszeichen oder auch Gänsefüßchen heißt)
+      + Habe mit den Prüfung-Methoden gearbeitet und ins "if else" Kette es umgebaut, auch in main habe ich Reservierungen deutlich markiert für bessere Verständnis.
+      + Mit Shift kann man markierter Text in "" reinpacken (das ding Anführungszeichen oder auch Gänsefüßchen heißt)
+      _________________
+      2023.05.22
+      Allgemeine Fragen:
+
+      + 29-31.05 Urlaub? (Prüfungsvorbereitung)                                                 Antrag stellen (luw und Steffi)
+      + wie kann ich ganzes Projekt mit ctrl+f durchsuchen und nicht nur eines Fenster          "Navigate - Search everywhere"
+                  -kann ich in GitHUb mein Projekt und alle frühere Versionen durchsuchen?      google
+      + 49 Euro Ticket?                                                                         +++
+      + 30 Euro karte monatlich?                                                                +++
+      + Feiertage eintragen? (z.B. 01.05 und 18.05)                                             man muss nicht eintragen (nur für Sonderfalle)
+      - Urlaub für 7-8. (Wiederholungsklausuren)?
+
+      Aufgaben:
+      - removeReservierung Methode funktionierend haben
+         - Ausgabe für Fehlermeldungen laut Aufgabe_vtp anpassen
+      + Liste von Reservierungen mithilfe getReservierungen Methode ausgeben lassen
+                  -laut Aufgabe_vtp Ausgabe anpassen
+      -/+ alle Kernpunkte mit Kommentare deutlich beschreiben
+
+      Tagesverlauf:
+      -Mit dem luw Allgemeinfragen sind beantwortet.
+      -Dank Debugger, festgestellt, dass addReservierung funktioniert korrekt und speichert Reservierungen, nur wenn sie den Voraussetzungen entsprechen
+      -ich habe geschafft getReservierung zu implementieren
+      -auch Ausgabe in Konsole ist fertig gemacht! Dank Ausgabe ich habe nochmals bestätigt, dass nur zwei Reservierungen sind gespeichert
+      _________________
+      2023.05.22
+      Aufgaben:
+      -Vertiefen und besser Verstehen Ausgabe von Liste mithilfe getReservierung
+      -Remove reservierung Funktion
+      - alle Kernpunkte mit Kommentare deutlich beschreiben
+
+      Tagesverlauf:
+
+
+

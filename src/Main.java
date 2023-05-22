@@ -12,7 +12,7 @@ public class Main {
         /*
 Fahrzeugvermietung (großgeschrieben) ist eine Klasse, davon wird ein Objekt vermietung (kleingeschrieben) erzeugt. Objekt übernimmt Eingenschaften von Klasse Fahrzeugvermietung.
          */
-        //Hier erzeugen wir neue Liste die heißt "fahrzeuge"
+        //Hier erzeugen wir neue Liste die heißt "fahrzeuge". Liste ist neue Objekt von Klasse Fahrzeugvermietung
         Fahrzeugvermietung fahrzeuge = new Fahrzeugvermietung();
 
         /*
@@ -39,7 +39,8 @@ in die Klammern sind die Werte für die Parameters die haben wir für dementspre
         Motorrad motorrad1 = new Motorrad("Honda", "CBR600", "rot", "K-KA 5678", 600, 250.0, 15.0);
         Motorrad motorrad2 = new Motorrad("Kawasaki", "Ninja 300", "schwarz", "rKennzeichen2mrtd", 610, 240.50, 17.5);
         Motorrad motorrad3 = new Motorrad("Yamaha", "YZF-R1", "blau", "W-WW 9876", 590, 275.80, 13.0);
-
+        Motorrad motorrad4 = new Motorrad("Honda", "CBR1000RR", "rot", "H-HH 1234", 1000, 289.00, 15.5);
+        Motorrad motorrad6 = new Motorrad("BMW", "S1000RR", "schwarz", "B-BB 9012", 999, 290.00, 13.8);
 
         //7 Personen
         Person person1 = new Person("Max", "Mustermann", 18);
@@ -213,7 +214,13 @@ in die Klammern sind die Werte für die Parameters die haben wir für dementspre
         person1.setVorname("Max");
         person1.setNachname("Mustermann");
         habe oben das Gleiche gemacht Z11*/
-
+        List<Reservierung> reservierungen = fahrzeuge.getReservierung();
+        for (Reservierung reservierung : reservierungen) {
+            // Gib die Details der Reservierung aus
+            System.out.println("Person: " + reservierung.getPerson());
+            System.out.println("Fahrzeug: " + reservierung.getFahrzeug());
+            System.out.println("--------------------");
+        }
 
         /*Auto auto3 = new Auto();
         auto3.setMarke("BMW");

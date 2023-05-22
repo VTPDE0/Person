@@ -28,11 +28,11 @@ public class Fahrzeugvermietung {
     }
 
     private boolean darfFahren(Person person) {
-        if (person.getAlter() < 18) {
-            return false;
+        if (person.getAlter() < 18) {   //Prüft mithilfe Methode person.getAlter aus Person Klasse ob Person weniger als 18 Jahre alt ist
+            return false;               //wenn Person junger als 18 ist - Methode gibt false zurück
         }
 
-        return true;
+        return true;                //sonst (wenn Person ist alter als 18 ist) - true
     }
 
     private boolean istFahrzeugReserviert(Fahrzeug fahrzeug) {
@@ -78,5 +78,8 @@ public class Fahrzeugvermietung {
         }
     }
 
+    public List<Reservierung> getReservierung() {
+        return this.reservierung;
+    }
 
 }

@@ -1,4 +1,3 @@
-// Reservierung-Klasse
 public class Reservierung {
     private Person person;
     private Fahrzeug fahrzeug;
@@ -23,4 +22,5 @@ public class Reservierung {
     public void setFahrzeug(Fahrzeug fahrzeug) {
         this.fahrzeug = fahrzeug;
     }
+
 }
