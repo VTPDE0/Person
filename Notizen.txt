@@ -106,12 +106,30 @@
       -auch Ausgabe in Konsole ist fertig gemacht! Dank Ausgabe ich habe nochmals bestätigt, dass nur zwei Reservierungen sind gespeichert
       _________________
       2023.05.22
-      Aufgaben:
-      -Vertiefen und besser Verstehen Ausgabe von Liste mithilfe getReservierung
-      -Remove reservierung Funktion
-      - alle Kernpunkte mit Kommentare deutlich beschreiben
+      -Aufgaben:
+      1) Vertiefen und besser Verstehen Ausgabe von Liste mithilfe getReservierung
+      2) Remove reservierung Funktion
+      3) alle Kernpunkte mit Kommentare deutlich beschreiben
+      -) ich würde gerne Reservierungen nummerieren, wie kann ich das machen?
 
-      Tagesverlauf:
+      -Fragen:
+      1) Was ist static? (.this)
+      2)
+
+      -Tagesverlauf:
+      1) Man kann längere Methoden aufrufen! Ist sehr cool. z.B. reservierung.getPerson().getNachname(). Wir können getNachname von getPerson aufrufen. getNachname wird allein nicht funktionieren
+      2) Wie kann ich definieren welche Reservierungen müssen gelöscht sein? Sie sind nicht nummeriert.
+      3) Ich werde für jede Reservierung ein Name zuweisen.
+        -erstmal ich habe noch extra Parameter "Name" in Klasse Reservierung erstellt.
+        -durch dieser Name kann ich dann die Reservierungen aufrufen oder löschen
+                    (war nicht implementiert) -Durch Variable i ich kann die Reservierungen nummerieren.
+                                              -Erstmal aber muss addReservierung Methode anpassen.
+      4)
+
+
+      -Allgemeine Fragen:
+
+
 
 
 

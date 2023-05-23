@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Fahrzeugvermietung {
+    int i = 1;
     private List<Reservierung> reservierung = new ArrayList<Reservierung>();
     private List<Fahrzeug> fahrzeuge = new ArrayList<Fahrzeug>(); //Fahrzeug oder Fahrzeuge?
 
@@ -13,7 +14,7 @@ public class Fahrzeugvermietung {
         this.fahrzeuge.remove(fahrzeug);
     }
 
-    public void removeReservierung(Reservierung reservierung) {
+    public void removeReservierung(Person person, Fahrzeug fahrzeug) {
         this.reservierung.remove(reservierung);
     }
 

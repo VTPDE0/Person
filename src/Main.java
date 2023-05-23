@@ -12,7 +12,7 @@ public class Main {
         /*
 Fahrzeugvermietung (großgeschrieben) ist eine Klasse, davon wird ein Objekt vermietung (kleingeschrieben) erzeugt. Objekt übernimmt Eingenschaften von Klasse Fahrzeugvermietung.
          */
-        //Hier erzeugen wir neue Liste die heißt "fahrzeuge". Liste ist neue Objekt von Klasse Fahrzeugvermietung
+        //Hier erzeugen wir neue Liste die heißt "fahrzeugListe". Liste ist neue Objekt von Klasse Fahrzeugvermietung
         Fahrzeugvermietung fahrzeuge = new Fahrzeugvermietung();
 
         /*
@@ -217,11 +217,24 @@ in die Klammern sind die Werte für die Parameters die haben wir für dementspre
         List<Reservierung> reservierungen = fahrzeuge.getReservierung();
         for (Reservierung reservierung : reservierungen) {
             // Gib die Details der Reservierung aus
-            System.out.println("Person: " + reservierung.getPerson());
-            System.out.println("Fahrzeug: " + reservierung.getFahrzeug());
+            System.out.println("Gespeicherte Reservierung" + ":");           /* + i++ + */             //ich würde gerne Reservierungen nummerieren, wie kann ich das machen?
+            System.out.println("Person: " + reservierung.getPerson().getNachname() + " " + reservierung.getPerson().getVorname());
+            System.out.println("Fahrzeug: " + reservierung.getFahrzeug().getMarke() + " " + reservierung.getFahrzeug().getModell());
             System.out.println("--------------------");
         }
 
+        //fahrzeugListe.removeReservierung();
+
+        System.out.println("Aktualisierte Liste der Reservierungen:");
+        System.out.println("--------------------");
+
+        for (Reservierung reservierung : reservierungen) {
+            // Gib die Details der Reservierung aus
+            System.out.println("Gespeicherte Reservierung" + ":");           /* + i++ + */             //ich würde gerne Reservierungen nummerieren, wie kann ich das machen?
+            System.out.println("Person: " + reservierung.getPerson().getNachname() + " " + reservierung.getPerson().getVorname());
+            System.out.println("Fahrzeug: " + reservierung.getFahrzeug().getMarke() + " " + reservierung.getFahrzeug().getModell());
+            System.out.println("--------------------");
+        }
         /*Auto auto3 = new Auto();
         auto3.setMarke("BMW");
         auto3.setModell("3er");
