@@ -2,20 +2,30 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Fahrzeugvermietung {
-    int i = 1;
     private List<Reservierung> reservierung = new ArrayList<Reservierung>();
     private List<Fahrzeug> fahrzeuge = new ArrayList<Fahrzeug>(); //Fahrzeug oder Fahrzeuge?
 
+    public void removeReservierung(Reservierung reservierung) {
+        this.reservierung.remove(reservierung);
+    }
+
+    public List<Reservierung> getReservierung() {
+        return this.reservierung;
+    }
+
     public void addFahrzeuge(Fahrzeug fahrzeug) {
         this.fahrzeuge.add(fahrzeug);
+        /*Das Schlüsselwort "this" wird in der Programmierung verwendet, um auf das aktuelle Objekt oder die aktuelle Instanz einer Klasse
+        zu verweisen. Es wird verwendet, um auf die Eigenschaften und Methoden des aktuellen Objekts zuzugreifen.*/
     }
 
-    public void removeFahrzeug(Fahrzeug fahrzeug) {
-        this.fahrzeuge.remove(fahrzeug);
-    }
-
-    public void removeReservierung(Person person, Fahrzeug fahrzeug) {
-        this.reservierung.remove(reservierung);
+    public void removeReservierung() {
+        for (Reservierung reservierung : reservierung) {
+            if (reservierung.getPerson().getNachname().equals("Mustermann") &&
+                    reservierung.getPerson().getVorname().equals("Max")) {
+                this.reservierung.remove(reservierung);
+            }
+        }
     }
 
     private boolean hatPersonBereitsReserviert(Person person) { //"hatPersonBereitsReserviert" name von Methode. "(Person person) person muss ein Objekt von klasse Person sein"
@@ -44,7 +54,6 @@ public class Fahrzeugvermietung {
         }
         return false; // Fahrzeug ist noch nicht reserviert
     }
-
 
     public void addReservierung(Person person, Fahrzeug fahrzeug) {
         if (!darfFahren(person)) {
@@ -77,10 +86,6 @@ public class Fahrzeugvermietung {
             System.out.println("erfolgreich erstellt");
             System.out.println("___________________________________________");
         }
-    }
-
-    public List<Reservierung> getReservierung() {
-        return this.reservierung;
     }
 
 }

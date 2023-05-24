@@ -3,7 +3,7 @@ public class Person {
     private String vorname;
     private String nachname;
     private int alter;
-    private Reservierung reservierung;
+    //private Reservierung reservierung;
 
     //konstruktor für die Personen mit 3 Parameters
     public Person(String vorname, String nachname, int alter) {

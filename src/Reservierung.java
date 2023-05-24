@@ -1,21 +1,13 @@
 public class Reservierung {
     private Person person;
     private Fahrzeug fahrzeug;
-    private String name;
 
-    public Reservierung(Person person, Fahrzeug fahrzeug, String name) {
-        setPerson(person);
-        setFahrzeug(fahrzeug);
-        setName(name);
+
+    public Reservierung(Person person, Fahrzeug fahrzeug) {
+        this.person = person;
+        this.fahrzeug = fahrzeug;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(Name name) {
-        this.name = name;
-    }
 
     public Person getPerson() {
         return person;

@@ -214,7 +214,7 @@ in die Klammern sind die Werte für die Parameters die haben wir für dementspre
         person1.setVorname("Max");
         person1.setNachname("Mustermann");
         habe oben das Gleiche gemacht Z11*/
-        List<Reservierung> reservierungen = fahrzeuge.getReservierung();
+        List<Reservierung> reservierungen = fahrzeuge.getReservierung();    //List ist Liste. <Klasse Reservierung> hier ist die name von Liste = hier ist die name von Liste in Klasse Fahrzeugvermietung
         for (Reservierung reservierung : reservierungen) {
             // Gib die Details der Reservierung aus
             System.out.println("Gespeicherte Reservierung" + ":");           /* + i++ + */             //ich würde gerne Reservierungen nummerieren, wie kann ich das machen?
@@ -222,8 +222,7 @@ in die Klammern sind die Werte für die Parameters die haben wir für dementspre
             System.out.println("Fahrzeug: " + reservierung.getFahrzeug().getMarke() + " " + reservierung.getFahrzeug().getModell());
             System.out.println("--------------------");
         }
-
-        //fahrzeugListe.removeReservierung();
+        fahrzeuge.removeReservierung();
 
         System.out.println("Aktualisierte Liste der Reservierungen:");
         System.out.println("--------------------");
@@ -327,5 +326,14 @@ in die Klammern sind die Werte für die Parameters die haben wir für dementspre
         System.out.println("Reservierte Person: " + reserviertePerson5.getVorname() + " " + reserviertePerson5.getNachname());
         System.out.println("Reserviertes Fahrzeug: " + reserviertesFahrzeug5.getMarke() + " " + reserviertesFahrzeug5.getModell());
 */
+        // fahrzeuge.addReservierung(person1, auto4, name);
+        //fahrzeuge.addReservierung(person2, auto5, name);
+        //fahrzeuge.addReservierung(person3, auto6, name);
+        //this.name = ("Reservierung " + i++);
+        /*
+        if ()
+        */
+
     }
+
 }

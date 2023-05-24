@@ -128,8 +128,39 @@
 
 
       -Allgemeine Fragen:
-
-
+      _________________
+      2023.05.22
+      -Aufgaben:
+      1) Remove reservierung Funktion implementieren
+        -dafür aber ich brauche irgendwie alle Reservierungen markieren (Name geben), sodass ich kann bestimmte Reservierungen löschen
+        -dafür ich muss ganzes addReservierung Methode bearbeiten
+      -Fragen:
+      1) Hatte ich eigentlich Recht, dass ich muss addReservierung bearbeiten oder konnte ich irgendwie removeReservierung doch implementieren?
+      -Tagesverlauf:
+      1) in die Klasse Reservierung neue Attribute "Name" ist hinzugefügt. Mithilfe Variable i es wird für Nummerierung dienen
+      2) Ausgabe für addReservierung angepasst mit Name
+      _________________
+      2023.05.23
+     -Tagesverlauf:
+      1)Sodass ich kann die Liste durchiterieren und dann etwas rauslöschen ich muss wissen was will ich löschen:
+        I) ich muss for Schleife nutzen und suchen bestimmte Namen
+        oder
+        II) ich muss irgendwie sagen, dass ich will z.B. erste Reservierung löschen
+            aber
+            -ich brauche dazu Verständnis, wie sage ich dem Programm, welche Reservierung die erste Reservierung ist
+                -ich weiß aber nicht, wie Programm bezeichnet die Reservierungen. In Debugger mode steht Name für Reservierung 0 "Reservierung@785", aber ich kann das nicht richtig nutzen.
+                -Nummer 0 allein geht auch nicht
+                -ich selbe habe nur Person und Fahrzeug an Reservierung zugewiesen, also keine Nummer.
+                  (Rein theoretisch ich könnte Reservierungsliste durchiterieren und löschen Reservierungen die enthaltenen Namen oder Vorname von Person der
+                   hat bereits reserviert (oder Einzelheiten von reservierte Fahrzeug) also siehe obere Punkt bevor "aber")
+        am Endeffekt:
+            -leider ich habe nicht geschafft an die Reservierungen irgendwelche Name oder Nummerierung anzuweisen
+            -erstes Punkt in der Liste habe ich auch nicht geschafft zu löschen, da ich weiß nicht wie soll ich an Programm weiterteilen, was erstes Objekt ist
+        +++ -aber ich habe Punkt 1 implementiert-
+                -jetzt removeReservierung prüft Liste mit Reservierungen und sucht bestimmten Nachnamen und Vornamen und dann löscht Reservierungen von diese Person
+                -also removeReservierung funktioniert
+     2) Ich verwirre mich mit den gleichen Begriffen wie z.B.
+     main z217 List<Reservierung> reservierungen = fahrzeuge.getReservierung();
 
 
 
