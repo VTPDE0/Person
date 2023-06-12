@@ -3,30 +3,26 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-/*
-%%gemacht%% Z 13,18,19                          erstens:    Beschreibung ausfüllen
-%%gemacht%% Klasse "Fahrzeug" Z21-29            zweitens:   Einen Fahrzeug Konstruktor mit allen Feldern/Eingenschaften erstellen
-%%gemacht%% Klasse "Fahrzeug" Z21-29            drittens:   Beschreiben alles was in neuen Konstruktor passiert ist
-%%gemacht%% Z23 und 31-3                        viertens:   Neues Objekt mit neues Konstruktor erstellen, danach alle eingenschaften mit system.out ausgeben
-*/
-        /*
-Fahrzeugvermietung (großgeschrieben) ist eine Klasse, davon wird ein Objekt vermietung (kleingeschrieben) erzeugt. Objekt übernimmt Eingenschaften von Klasse Fahrzeugvermietung.
-         */
-        //Hier erzeugen wir neue Liste die heißt "fahrzeugListe". Liste ist neue Objekt von Klasse Fahrzeugvermietung
+
+        /*Hier erzeugen wir neue Liste die heißt "fahrzeugListe". Liste ist neue Objekt von Klasse Fahrzeugvermietung
+
+        Fahrzeugvermietung (großgeschrieben) ist eine Klasse, davon wird ein Objekt fahrzeuge (kleingeschrieben) erzeugt. Objekt übernimmt Eingenschaften von Klasse Fahrzeugvermietung.
+        */
         Fahrzeugvermietung fahrzeuge = new Fahrzeugvermietung();
 
         /*
-Fahrzeug (großgeschrieben) ist eine Klasse, davon wird ein Objekt fahrzeug1 (kleingeschrieben) erzeugt. Objekt übernimmt Eigenschaften von Konstruktor 1
-Fahrzeug (großgeschrieben) ist eine Klasse, davon wird ein Objekt fahrzeug2 (kleingeschrieben) erzeugt. Objekt übernimmt Eigenschaften von Konstruktor 2 (Fahrzeug mit Parameter "Marke" der war zu ABS unbenannt und hat ein Wert "BMW")
-in die Klammern sind die Werte für die Parameters die haben wir für dementsprechenden Konstruktoren eingelegt in Klasse "Fahrzeug"
-         */
-//Habe vergessen richtiger Kommentar zu schreiben
-        /*Hier erzeugen wir 5 Fahrzeuge
+       Hier erzeugen wir 5 Fahrzeuge
         Fahrzeug fahrzeug1 = new Fahrzeug("randomMarke1", "randomModell1", "randomFarbe1", "randomKennzeichen1");
         Fahrzeug fahrzeug2 = new Fahrzeug("randomMarke2", "randomModell2", "randomFarbe2", "randomKennzeichen2");
         Fahrzeug fahrzeug3 = new Fahrzeug("randomMarke3", "randomModell3", "randomFarbe3", "randomKennzeichen3");
         Fahrzeug fahrzeug4 = new Fahrzeug("randomMarke4", "randomModell4", "randomFarbe4", "randomKennzeichen4");
-        Fahrzeug fahrzeug5 = new Fahrzeug("randomMarke5", "randomModell5", "randomFarbe5", "randomKennzeichen5");*/
+        Fahrzeug fahrzeug5 = new Fahrzeug("randomMarke5", "randomModell5", "randomFarbe5", "randomKennzeichen5");
+
+       Fahrzeug (großgeschrieben) ist eine Klasse, davon wird ein Objekt fahrzeug1 (kleingeschrieben) erzeugt. Objekt übernimmt Eigenschaften von Konstruktor 1
+       Fahrzeug (großgeschrieben) ist eine Klasse, davon wird ein Objekt fahrzeug2 (kleingeschrieben) erzeugt. Objekt übernimmt Eigenschaften von Konstruktor 2 (Fahrzeug mit Parameter "Marke" der war zu ABS unbenannt und hat ein Wert "BMW")
+       in die Klammern sind die Werte für die Parameters die haben wir für dementsprechenden Konstruktoren eingelegt in Klasse "Fahrzeug"
+
+        */
 
         //Hier erzeugen wir 5 Autos
         Auto auto1 = new Auto("VW", "Golf", "blau", "B-AB 1234", 17, 4, true);
@@ -42,7 +38,7 @@ in die Klammern sind die Werte für die Parameters die haben wir für dementspre
         Motorrad motorrad4 = new Motorrad("Honda", "CBR1000RR", "rot", "H-HH 1234", 1000, 289.00, 15.5);
         Motorrad motorrad6 = new Motorrad("BMW", "S1000RR", "schwarz", "B-BB 9012", 999, 290.00, 13.8);
 
-        //7 Personen
+        //Hier erzeugen wir 7 Personen
         Person person1 = new Person("Max", "Mustermann", 18);
         Person person2 = new Person("Emma", "Müller", 12);
         Person person3 = new Person("Ben", "Schmidt", 22);
@@ -64,6 +60,12 @@ in die Klammern sind die Werte für die Parameters die haben wir für dementspre
         System.out.println("Auto3: " + auto3.getFarbe());
         System.out.println("Auto3: " + auto3.getKennzeichen());
         */
+
+        /*
+        Hier fügen wir die Autos und Motorräder zur Liste "fahrzeuge" hinzu
+        eigentlich spielt es keine Role mehr, war für 3.2 implementiert
+         */
+
         fahrzeuge.addFahrzeuge(auto1);
         fahrzeuge.addFahrzeuge(auto2);
         fahrzeuge.addFahrzeuge(auto3);
@@ -78,8 +80,13 @@ in die Klammern sind die Werte für die Parameters die haben wir für dementspre
         /*Warum das ding funktioniert nicht?
         for (Fahrzeug fahrzeug : fahrzeuge) {
             System.out.println(fahrzeug);
+   kann ich überhaupt so eine Fahrzeug aufrufen?
              }*/
-//Hier werden die Reservierungen erstellt und dank Methoden "darfFahren" und "checkReservierung" von Klasse Fahrzeugvermietung geprüft
+
+        /*
+        Hier werden die Reservierungen erstellt und dank Methoden "darfFahren" und "checkReservierung" von Klasse Fahrzeugvermietung geprüft
+        und als Kommentare wird erwartete und gewünschte Verhalten beschrieben
+        */
 
         fahrzeuge.addReservierung(person5, auto3);
         //darfFahren - falsch
@@ -214,22 +221,37 @@ in die Klammern sind die Werte für die Parameters die haben wir für dementspre
         person1.setVorname("Max");
         person1.setNachname("Mustermann");
         habe oben das Gleiche gemacht Z11*/
-        List<Reservierung> reservierungen = fahrzeuge.getReservierung();    //List ist Liste. <Klasse Reservierung> hier ist die name von Liste = hier ist die name von Liste in Klasse Fahrzeugvermietung
+
+        /*
+        Hier geben wir die Liste von gespeicherte Reservierungen in der Konsole aus und damit prüfen,
+        dass unsere Methoden "hatPersonBereitsReserviert" und "darfFahren" funktionieren und nur entsprechende Reservierungen sind gespeichert
+
+        List ist Liste; <Klasse Reservierung>; "reservierungen"- ist die name von Liste; mit "=" zuweisen wir den Wert für "reservierungen";
+        fahrzeuge.getReservierung- ist die Methode von Klasse Fahrzeugvermietung
+        */
+
+        List<Reservierung> reservierungen = fahrzeuge.getReservierung();
         for (Reservierung reservierung : reservierungen) {
-            // Gib die Details der Reservierung aus
-            System.out.println("Gespeicherte Reservierung" + ":");           /* + i++ + */             //ich würde gerne Reservierungen nummerieren, wie kann ich das machen?
+            System.out.println("Gespeicherte Reservierung" + ":");
             System.out.println("Person: " + reservierung.getPerson().getNachname() + " " + reservierung.getPerson().getVorname());
             System.out.println("Fahrzeug: " + reservierung.getFahrzeug().getMarke() + " " + reservierung.getFahrzeug().getModell());
             System.out.println("--------------------");
         }
+        /*
+        Hier entfernen wir bestimmte Reservierung mithilfe Methode aus der Klasse Fahrzeugvermietung "removeReservierung"
+        welche Reservierung wird entfernt wird in diese Methode definiert -> Klasse Fahrzeugvermietung -> Zeile 24 und 25
+        da steht erstmal "Max Mustermann"
+         */
         fahrzeuge.removeReservierung();
 
+        /*
+         Hier geben wir die Liste von gespeicherte Reservierungen in der Konsole erneut aus und prüfen ob Reservierung war wirklich entfernt
+         */
         System.out.println("Aktualisierte Liste der Reservierungen:");
         System.out.println("--------------------");
 
         for (Reservierung reservierung : reservierungen) {
-            // Gib die Details der Reservierung aus
-            System.out.println("Gespeicherte Reservierung" + ":");           /* + i++ + */             //ich würde gerne Reservierungen nummerieren, wie kann ich das machen?
+            System.out.println("Gespeicherte Reservierung" + ":");
             System.out.println("Person: " + reservierung.getPerson().getNachname() + " " + reservierung.getPerson().getVorname());
             System.out.println("Fahrzeug: " + reservierung.getFahrzeug().getMarke() + " " + reservierung.getFahrzeug().getModell());
             System.out.println("--------------------");
@@ -326,14 +348,6 @@ in die Klammern sind die Werte für die Parameters die haben wir für dementspre
         System.out.println("Reservierte Person: " + reserviertePerson5.getVorname() + " " + reserviertePerson5.getNachname());
         System.out.println("Reserviertes Fahrzeug: " + reserviertesFahrzeug5.getMarke() + " " + reserviertesFahrzeug5.getModell());
 */
-        // fahrzeuge.addReservierung(person1, auto4, name);
-        //fahrzeuge.addReservierung(person2, auto5, name);
-        //fahrzeuge.addReservierung(person3, auto6, name);
-        //this.name = ("Reservierung " + i++);
-        /*
-        if ()
-        */
-
     }
 
 }

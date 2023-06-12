@@ -161,6 +161,14 @@
                 -also removeReservierung funktioniert
      2) Ich verwirre mich mit den gleichen Begriffen wie z.B.
      main z217 List<Reservierung> reservierungen = fahrzeuge.getReservierung();
+     _________________
+     2023.06.12
+     Aufgaben:
+     -Code untersuchen, beearbeiten und wenn nötig extra beschreiben
+     -Aufgabe komplett commiten
+     -ob leicht oder schwer war (zusammen 3/4-1 Seite)
+        -rückblick auf Aufgabe persönlich
+     Termin morgen um 9:00
 
 
 
